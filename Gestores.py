@@ -107,7 +107,7 @@ fig_DesenvGeral
 #---------------------------------------------------------------------------------
 
 st.write("""
-## Desempenho Carel das Competência por Setor
+## Desempenho Cerejeiras das Competência por Setor
 """ )
 #df["Nivel avaliação"]
 #df["Setorial"]
