@@ -25,7 +25,7 @@ st.write("""
 """ )
 aval = ["Autoavaliação","Gestor","Pares","Liderados"]
 
-Nome = st.sidebar.selectbox("Colaboradores",df["Colab"].unique())
+Nome = st.sidebar.selectbox("Avaliados",df["Colab"].unique())
 
 df_filtered = df[df["Colab"] == Nome]
 #df_filtered
