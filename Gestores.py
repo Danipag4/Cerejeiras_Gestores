@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 #color = st.color_picker("Pick A Color", "#00f900")
 #st.write("The current color is", color)
 
-df = pd.read_csv("Teste.csv", sep=",")
+df = pd.read_csv("Gestores.csv", sep=",")
 
 
 df=df.sort_values("Nome")
