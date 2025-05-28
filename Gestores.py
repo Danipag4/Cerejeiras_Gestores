@@ -30,6 +30,7 @@ Nome = st.sidebar.selectbox("Avaliados",df["Colab"].unique())
 
 df_filtered = df[df["Colab"] == Nome]
 #df_filtered
+
 df_Média = df_filtered.groupby("Compet")[["Autoavaliação","Gestor","Pares","Liderados"]].mean().round(decimals=1).reset_index()
 #df_Média
 
@@ -83,7 +84,7 @@ if coment:
     
     with col2:
         df_filteredz = df_filtered3[df["Avaliar"] == Coment]
-        df_coment = df_filteredz.iloc[:,6]
+        df_coment = df_filteredz.iloc[:,7]
         df_coment
 
 
