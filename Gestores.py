@@ -79,11 +79,11 @@ if coment:
 
     with col1:
         df_filtered3 = df_filteredy[df["Nome"] == Nome]
-        #df_filtered3
-        Coment = st.selectbox("Comentário de :",df["Colab"].unique())
+       # df_filtered3
+        Coment = st.selectbox("Comentário de :",df_filtered3["Avaliador"].unique())
     
     with col2:
-        df_filteredz = df_filtered3[df["Avaliar"] == Coment]
+        df_filteredz = df_filtered3[df["Avaliador"] == Coment]
         df_coment = df_filteredz.iloc[:,7]
         df_coment
 
